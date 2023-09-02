@@ -5,11 +5,11 @@ import io.cucumber.java.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import utilities.CommonPage;
+import pages.CommonPage;
 import utilities.Driver;
 import utilities.MethodUtilities;
 
-public class Hook {
+public class Hook extends CommonPage{
 
     public static WebDriver driver;
     public static CommonPage commonPage;
@@ -21,7 +21,8 @@ public class Hook {
 
     @After(value = "@afterScenarioFinish")
     public void afterScenarioFinish(){
-        MethodUtilities.waitFor(3);
+
+        MethodUtilities.wait(5);
         Driver.closeDriver();
     }
 }

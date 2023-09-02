@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import utilities.CommonPage;
 
 public class FlightAppUI01 extends CommonPage {
 
@@ -19,4 +18,17 @@ public class FlightAppUI01 extends CommonPage {
 
     @FindBy(xpath = "//ul[@role=\"listbox\"]//li[@class=\"relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900")
     public WebElement DropDownList;
+
+    @FindBy(id="headlessui-combobox-label-:R69lla:")
+    public WebElement fromHeader;
+
+    @FindBy(id="headlessui-combobox-label-:R6hlla:")
+    public WebElement toHeader;
+
+    @FindBy(xpath = "//body/main/p[text()='⚠\uFE0FHer şehir arasında uçuş olmadığı için bazı sorgulardan cevap dönmeyecektir.']")
+    public WebElement atentionMessage1;
+
+    @FindBy(xpath = "//body/main/p[text()='“From: Istanbul”, “To: Los Angeles” seçtiğinde iki adet uçuş listelendiğini görmelisin.']")
+    public WebElement atentionMessage2;
+
 }

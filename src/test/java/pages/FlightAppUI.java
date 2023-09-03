@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class FlightAppUI01 extends CommonPage {
+public class FlightAppUI extends CommonPage {
 
     @FindBy(id="headlessui-combobox-input-:Rqhlla:")
     public WebElement toBox;
@@ -31,4 +31,13 @@ public class FlightAppUI01 extends CommonPage {
     @FindBy(xpath = "//body/main/p[text()='“From: Istanbul”, “To: Los Angeles” seçtiğinde iki adet uçuş listelendiğini görmelisin.']")
     public WebElement atentionMessage2;
 
+
+    @FindBy(xpath = "//ul[@role=\"list\"]//li[@class=\"overflow-hidden rounded-xl border border-gray-200\"]")
+    public WebElement foundList;
+
+    @FindBy(xpath = "//div/div/p[text()='2']")
+    public WebElement foundItemNumber;
+
+    @FindBy(xpath = "(//li[@class='overflow-hidden rounded-xl border border-gray-200'])[1]")
+    public WebElement foundListMember;
 }

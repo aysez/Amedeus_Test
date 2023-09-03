@@ -9,7 +9,7 @@ import utilities.MethodUtilities;
 public class CommonPage {
     private static CommonPage commonPage;
 
-    private static FlightAppUI01 flightAppUI01page;
+    private static FlightAppUI flightAppUI01page;
 
     private static MethodUtilities methodUtilitiespage;
 
@@ -26,9 +26,9 @@ public class CommonPage {
         return commonPage;
     }
 
-    public FlightAppUI01 getflightAppUI01() {
+    public FlightAppUI getflightAppUI01() {
         if (flightAppUI01page == null) {
-            flightAppUI01page = new FlightAppUI01();
+            flightAppUI01page = new FlightAppUI();
         }
         return flightAppUI01page;
     }

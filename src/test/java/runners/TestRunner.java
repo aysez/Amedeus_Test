@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         monochrome = false,
         features = "src/test/resources/features",
         glue = {"stepdefinitions"},
-        tags = "@Apitest",
+        tags = "@flightAppUI03",
         dryRun = false
 )
 public class TestRunner {

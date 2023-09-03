@@ -1,5 +1,5 @@
 @flightAppUI01  @UI
-Feature: US
+Feature: Check website
   Background:
     Given User goes to url
 

@@ -27,12 +27,6 @@ public class ListLibrary extends CommonPage {
         City.add("Rome");
     }
 
-
-    public void dropdownCity() {
-        List<WebElement> dropdownCityList = new ArrayList<WebElement>();
-        dropdownCityList.add(getflightAppUI01().DropDownList);
-    }
-
     public void foundCity() {
         List<WebElement> foundCityList = new ArrayList<WebElement>();
         foundCityList.add(getflightAppUI01().foundList);

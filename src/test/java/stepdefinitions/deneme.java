@@ -5,11 +5,10 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.CommonPage;
 
-public class FlightAppUI03 extends CommonPage {
+public class deneme extends CommonPage {
 
-
-    @Then("User enters city info box")
-    public void user_enters_city_info_box () {
+    @Then("User enters city into to box")
+    public void user_enters_city_into_to_box () {
         getflightAppUI01().fromBox.sendKeys("Istanbul");
         getflightAppUI01().fromBox.sendKeys(Keys.ENTER);
         getflightAppUI01().toBox.sendKeys("Los Angeles");
@@ -22,8 +21,4 @@ public class FlightAppUI03 extends CommonPage {
         Assert.assertEquals(getflightAppUI01().foundSizeList.size(),number);
 
     }
-
-    }
-
-
-
+}

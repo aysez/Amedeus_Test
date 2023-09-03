@@ -1,5 +1,5 @@
 @flightAppUI02  @UI
-Feature: US
+Feature: Enter city info
   Background:
     Given User goes to url
 

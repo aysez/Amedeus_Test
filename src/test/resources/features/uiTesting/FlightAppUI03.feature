@@ -1,5 +1,5 @@
 @flightAppUI03  @UI @afterScenarioFinish
-Feature: US
-  Scenario: us101
+Feature: Found size
+  Scenario: User check found size
     Given User goes to url
     Then User enters city info box
